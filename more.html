@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Info Example</title>
+    <style>
+        /* Style for the button */
+        .more-info-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Style for the extra content */
+        .extra-info {
+            display: none;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Learn More About Our Service</h2>
+
+    <button class="more-info-btn" onclick="toggleInfo()">More Info</button>
+
+    <div class="extra-info" id="extraInfo">
+        <p>We have product and client that need just let us know.</p>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var extraInfo = document.getElementById("extraInfo");
+            if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+                extraInfo.style.display = "block";
+            } else {
+                extraInfo.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

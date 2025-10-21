@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websit Biography</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Kirby Minguito</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://www.facebook.com/kirby.minguito18">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/its.me_ibyy/">Instagram</a></li>
+                        <li><a href="info.html">info</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="image.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Newly Webdev</span></h5>
+                    <h1>Minguito</h1>
+                    <p> I know basic code of html and css, i'm new but i can do a lot more than you think 
+                      not that hard thing but i have the skills that you need for this company and i rest assured that
+                      i will be the one of your best employee someday.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="more.html" class="btn active">More info</a>
+                       <a href="contactus.html  " class="btn">Contact us</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/kirby.minguito18"><i class="fa-brands fa-facebook"></i></a> 
+                        <a href="https://www.instagram.com/its.me_ibyy/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="kuromi"><i class="fa-brands fa-dribbble"></i></a>
+                       
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Newly","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html> 
